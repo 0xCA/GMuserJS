@@ -1,6 +1,7 @@
 // ==UserScript==
 // @name        Emoji remover
-// @namespace   MNS
+// @description Script that removing emojis and stickers at https://vk.com
+// @namespace   https://github.com/0xCA/GMuserJS
 // @include     https://vk.com/*
 // @include     http://vk.com/*
 // @version     2.54
