@@ -6,7 +6,7 @@
 // @updateURL     https://github.com/0xCA/GMuserJS/raw/master/vkEmojiRemover/EmojiRemover.user.js
 // @include       https://vk.com/*
 // @include       http://vk.com/*
-// @version       2.54
+// @version       2.55
 // @author        https://github.com/0xCA
 // @grant         none
 // ==/UserScript==
@@ -64,7 +64,7 @@ document.body.addEventListener('mouseup', function(){
   
   setTimeout(function(){
       FSInit();
-  }, 1000); // Remove anything after AJAX-navigation
+  }, 1500); // Remove anything after AJAX-navigation
 });
 
 
