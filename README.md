@@ -1,7 +1,6 @@
 # GMuserJS
 EN:  
-GreaceMonkey userscripts.  
-Here you can find and download some scripts.  
+GreaceMonkey userscripts. Here you can find and download some scripts.  
 Licensed under GNU GPL 3.0.  
 
 RU:  
