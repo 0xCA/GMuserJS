@@ -3,7 +3,7 @@
 // @description   Script that removes emojis and stickers at https://vk.com
 // @namespace     https://github.com/0xCA/GMuserJS
 // @downloadURL   https://github.com/0xCA/GMuserJS/raw/master/vkEmojiRemover/EmojiRemover.user.js
-// @updateURL   https://github.com/0xCA/GMuserJS/raw/master/vkEmojiRemover/EmojiRemover.user.js
+// @updateURL     https://github.com/0xCA/GMuserJS/raw/master/vkEmojiRemover/EmojiRemover.user.js
 // @include       https://vk.com/*
 // @include       http://vk.com/*
 // @version       2.54
