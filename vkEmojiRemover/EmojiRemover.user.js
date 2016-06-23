@@ -51,7 +51,7 @@ window.onscroll = function (e) {
         scrollTriggerBlock = true;
         setTimeout(function(){
           scrollTriggerBlock = false;
-        }, 500); // Prevent massive reaction on smooth scroll, leave only first every 500 ms
+        }, 500); // Prevent massive reaction on smooth scroll, leave only first one every 500 ms
       
         FSInit();
     }
