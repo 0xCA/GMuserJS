@@ -2,7 +2,7 @@
 
 EN:  
 Simple userscript that will remove all emojis and stickers from vk.com.  
-As an additional feature it removes annoing email confirmation box.  
+As an additional feature it removes annoying email confirmation box.  
 To install this script, open it in GitHub (just click on filename) and press "raw" button, then follow GM istructions.  
 
 RU:  
