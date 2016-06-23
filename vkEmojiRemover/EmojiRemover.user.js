@@ -73,7 +73,7 @@ document.body.addEventListener('mouseup', function(){
 document.body.addEventListener('keyup', function(e) {
     if(e.keyCode === 13) {
       FSInit();
-  }
+    }
 });
 
 ////////////////////////////////////////////////////////////////
