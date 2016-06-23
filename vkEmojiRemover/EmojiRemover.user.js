@@ -6,7 +6,7 @@
 // @updateURL     https://github.com/0xCA/GMuserJS/raw/master/vkEmojiRemover/EmojiRemover.user.js
 // @include       https://vk.com/*
 // @include       http://vk.com/*
-// @version       2.55
+// @version       2.56
 // @author        https://github.com/0xCA
 // @grant         none
 // ==/UserScript==
