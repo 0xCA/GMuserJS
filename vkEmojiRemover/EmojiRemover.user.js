@@ -91,7 +91,7 @@ function FSInit() {
 
 
 
-// Removing functions itself
+// Removing functions themselves
 function removeElementById(id) {
   var child = document.getElementById(id);
   if (child) {
