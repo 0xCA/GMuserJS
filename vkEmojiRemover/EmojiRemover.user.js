@@ -64,6 +64,7 @@ document.body.addEventListener('mouseup', function(){
   
   setTimeout(function(){
       FSInit();
+      removeElementById("ads_left");
   }, 1500); // Remove anything after AJAX-navigation
 });
 
