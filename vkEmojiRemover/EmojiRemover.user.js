@@ -6,7 +6,7 @@
 // @updateURL     https://github.com/0xCA/GMuserJS/raw/master/vkEmojiRemover/EmojiRemover.user.js
 // @include       https://vk.com/*
 // @include       http://vk.com/*
-// @version       2.56
+// @version       2.3.57
 // @author        https://github.com/0xCA
 // @grant         none
 // ==/UserScript==
@@ -46,7 +46,7 @@ window.onload = function() {
 
 
 // React on any scroll
-window.onscroll = function (e) {
+window.onscroll = function () {
     if (!scrollTriggerBlock) {
         scrollTriggerBlock = true;
         setTimeout(function(){
