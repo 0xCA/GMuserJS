@@ -6,7 +6,7 @@
 // @updateURL     https://github.com/0xCA/GMuserJS/raw/master/vkEmojiRemover/EmojiRemover.user.js
 // @include       https://vk.com/*
 // @include       http://vk.com/*
-// @version       2.3.57
+// @version       2.3.58
 // @author        https://github.com/0xCA
 // @grant         none
 // ==/UserScript==
@@ -29,18 +29,16 @@ scrollTriggerBlock = false;
 // React on load
 window.onload = function() {
   
-  FSInit();
-  
-  setTimeout(function(){
     FSInit();
+  
+  
+    // Automatically remove confirmation box and ads
     if (document.getElementById("actualize_box")) {
         var id = ["box_layer_bg", "box_layer_wrap"];
         id.forEach(removeElementById);
     }
     
     removeElementById("ads_left");
-    
-  }, 500); // Automatically remove confirmation box and ads
   
 };
 
@@ -50,7 +48,7 @@ window.onscroll = function () {
     if (!scrollTriggerBlock) {
         scrollTriggerBlock = true;
         setTimeout(function(){
-          scrollTriggerBlock = false;
+            scrollTriggerBlock = false;
         }, 500); // Prevent massive reaction on smooth scroll, leave only first one every 500 ms
       
         FSInit();
@@ -60,19 +58,19 @@ window.onscroll = function () {
 
 // React on any click
 document.body.addEventListener('mouseup', function(){
-  FSInit();
+    FSInit();
   
-  setTimeout(function(){
-      FSInit();
-      removeElementById("ads_left");
-  }, 1500); // Remove anything after AJAX-navigation
+    setTimeout(function(){
+        FSInit();
+        removeElementById("ads_left");
+    }, 1500); // Remove anything after AJAX-navigation
 });
 
 
 // React on enter
 document.body.addEventListener('keyup', function(e) {
     if(e.keyCode === 13) {
-      FSInit();
+        FSInit();
     }
 });
 
@@ -86,28 +84,28 @@ document.body.addEventListener('keyup', function(e) {
 
 // Filtering scanner
 function FSInit() {
-  var className = ["emoji", "emoji_css", "sticker_img", "emoji_smile_cont", "emoji_smile_cont ", "emoji_list", "emoji_smile fl_l", "im_sticker_row"];
-  className.forEach(removeElementsByClassName);
+    var className = ["emoji", "emoji_css", "sticker_img", "emoji_smile_cont", "emoji_smile_cont ", "emoji_list", "emoji_smile fl_l", "im_sticker_row"];
+    className.forEach(removeElementsByClassName);
 }
 
 
 
 // Removing functions themselves
 function removeElementById(id) {
-  var child = document.getElementById(id);
-  if (child) {
-    child.parentElement.removeChild(child);
-  }
+    var child = document.getElementById(id);
+    if (child) {
+        child.parentElement.removeChild(child);
+    }
 }
 
 function removeElementsByClassName(className) {
     var elementsList = document.getElementsByClassName(className);
 
     while (elementsList.length != 0) {
-      for (var i = 0; i < elementsList.length; i++) {
-        child = elementsList[i];
-        child.parentElement.removeChild(child);
-      }
+        for (var i = 0; i < elementsList.length; i++) {
+          child = elementsList[i];
+          child.parentElement.removeChild(child);
+        }
     }
 }
 
