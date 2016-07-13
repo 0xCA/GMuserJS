@@ -103,8 +103,8 @@ function removeElementsByClassName(className) {
 
     while (elementsList.length != 0) {
         for (var i = 0; i < elementsList.length; i++) {
-          child = elementsList[i];
-          child.parentElement.removeChild(child);
+            child = elementsList[i];
+            child.parentElement.removeChild(child);
         }
     }
 }
