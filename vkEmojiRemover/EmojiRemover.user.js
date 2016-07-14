@@ -8,7 +8,7 @@
 // @include       https://new.vk.com/*
 // @include       http://vk.com/*
 // @include       http://new.vk.com/*
-// @version       2.3.58
+// @version       2.3.60
 // @author        https://github.com/0xCA
 // @grant         none
 // ==/UserScript==
