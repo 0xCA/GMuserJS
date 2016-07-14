@@ -5,7 +5,9 @@
 // @downloadURL   https://github.com/0xCA/GMuserJS/raw/master/vkEmojiRemover/EmojiRemover.user.js
 // @updateURL     https://github.com/0xCA/GMuserJS/raw/master/vkEmojiRemover/EmojiRemover.user.js
 // @include       https://vk.com/*
+// @include       https://new.vk.com/*
 // @include       http://vk.com/*
+// @include       http://new.vk.com/*
 // @version       2.3.58
 // @author        https://github.com/0xCA
 // @grant         none
@@ -84,7 +86,7 @@ document.body.addEventListener('keyup', function(e) {
 
 // Filtering scanner
 function FSInit() {
-    var className = ["emoji", "emoji_css", "sticker_img", "emoji_smile_cont", "emoji_smile_cont ", "emoji_list", "emoji_smile fl_l", "im_sticker_row"];
+    var className = ["emoji", "emoji_css", "sticker_img", "emoji_smile_cont", "emoji_smile_cont ", "emoji_list", "emoji_smile fl_l", "im_sticker_row", "emoji_smile_icon", "_im_rc_emoji im_rc_emojibtn", "chat_cont_scrolling"];
     className.forEach(removeElementsByClassName);
 }
 
