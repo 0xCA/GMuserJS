@@ -86,7 +86,7 @@ document.body.addEventListener('keyup', function(e) {
 
 // Filtering scanner
 function FSInit() {
-    var className = ["im_rcem_cont fl_l", "DISemoji_list", "emoji_smile fl_l", "emoji_smile_icon", "_im_rc_emoji im_rc_emojibtn", "chat_cont_scrolling", "emoji", "emoji_css", "sticker_img", "emoji_smile_cont", "emoji_smile_cont ", "im_sticker_row"];
+    var className = ["im_rc_emojibtn", "emoji_smile fl_l", "emoji_smile_icon", "_im_rc_emoji im_rc_emojibtn", "chat_cont_scrolling", "emoji", "emoji_css", "sticker_img", "emoji_smile_cont", "emoji_smile_cont ", "im_sticker_row"];
     className.forEach(removeElementsByClassName);
 }
 
